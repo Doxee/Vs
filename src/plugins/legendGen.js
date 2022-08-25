@@ -62,7 +62,7 @@ const legendGen = (
             .append("text")
             .attr("class", "label label--group")
             .attr("text-anchor", "start")
-            .attr("x", labelPos.x + labelPos.width)
+            .attr("x", labelPos.x + labelPos.width + 8)
             .attr("y", axisXGroupLabelLaneHeight / 2)
             .attr("dy", "0.32em")
             .text(d)
