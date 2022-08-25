@@ -85,7 +85,9 @@
 
                         yAxisRuler = true,
 
-                        hasBrush
+                        hasBrush,
+
+                        groupColors
                     } = this.options,
                     {
                         axisXLabelLaneHeight = isNull(axisXLabel) ? 0 : 60,
@@ -102,7 +104,7 @@
 
                 const schemeCategory20c = d3.scaleOrdinal()
                     .domain(groups)
-                    .range(d3.schemeCategory20c);
+                    .range(groupColors && Array.isArray(groupColors) ? groupColors : d3.schemeCategory20c);
 
                 const yScale = d3.scaleLinear()
                     .domain(negative ? d3.extent(data, d => d.value) : [0, d3.max(__data__.map(d => d.value))])
