@@ -11,10 +11,10 @@ const MAP = Object.freeze({
     Millisecond: "%H:%M:%S.%L",
     Second: "%H:%M:%S",
     Minute: "%H:%M",
-    Hour: "%m-%d %H:%M",
-    Week: "%m-%d",
-    Day: "%m-%d",
-    Month: "%m-%d",
+    Hour: "%d %b %H:%M",
+    Week: "%d %b",
+    Day: "%d %b",
+    Month: "%b %y",
     Year: "%Y",
 });
 
